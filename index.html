@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+        font-family: "Century Gothic", 'Lato', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.et-hero-tabs,
+.et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: #eee;
+
+
+        text-align: center;
+        padding: 0 2em;
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+        letter-spacing: 1rem;
+    }
+    h3 {
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+        opacity: 0.6;
+    }
+}
+
+
+
+
+
+
+
+
+.et-hero-tabs-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    z-index: 10;
+    &--top {
+        position: fixed;
+        top: 0;
+    }
+}
+
+
+
+
+
+
+
+
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #b10000;
+    letter-spacing: 0.1rem;
+        transition: all 0.5s ease;
+        font-size: 0.8rem;
+      &:hover {
+            color:white;
+      background: rgba(131, 120, 145, 0.8);
+            transition: all 0.5s ease;
+   
+        }
+   
+}
+
+
+
+
+
+
+
+
+.et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background: #66B1F1;
+    transition: left 0.3s ease;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 800px) {
+    .et-hero-tabs,
+    .et-slide {
+       
+    h1 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    }
+    .et-hero-tab {
+        font-size: 1rem;
+        background-color: #1d1b2b ;
+        color: whitesmoke;
+    }
+   
+}
+.Fadumo{
+    margin-left: 30px;
+}
+dd{
+    margin-left: 60px;;
+}
+h5{
+    margin-left: 30px;
+}
+/* Create a grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    gap: 20px; /* Space between the grid items */
+}
+
+
+/* Each grid item (box) */
+.grid-item {
+    padding: 20px;
+    border: 1px solid #ddd; /* Optional: border for clarity */
+    background-color: #f9f9f900; /* Optional: background color for each item */
+    border-radius: 13px;
+}
+
+
+/* Span the last item across both columns */
+.grid-item.span-two {
+    grid-column: span 2; /* Span the last item across both columns */
+    height: 200px;
+}
+dd{
+    letter-spacing:1px;
+}
+#tab-flexbox {
+    background-color: #eee;  /* You can change this color to whatever you prefer */
+    padding: 20px;  /* Optional: adds padding to the section */
+}
+.et-hero-tabs {
+    background-color: #122455; /* Set your desired color */
+    color: white; /* Optional: ensures text is readable against a dark background */
+}
+.faq-container {
+        margin: 20px;
+    }
+
+    .faq-item {
+        margin-bottom: 15px;
+    }
+
+    .faq-question {
+        background-color: #122455;
+        color: white;
+        font-size: 1.1rem;
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .faq-question:hover {
+        background-color: #1d1b2b;
+    }
+
+    .faq-answer {
+        display: none;
+        margin-top: 10px;
+        padding-left: 20px;
+        font-size: 1rem;
+    }
+
+    .faq-answer p {
+        margin: 0;
+    }
+
+
+
+
+
+
+
+        </style>
+    </head>
+
+
+
+
+    <body>
+          <!-- Hero -->
+  <section class="et-hero-tabs">
+    <h1>HOMICIDE</h1>
+    <h3>Educate yourself on homicide</h3>
+    <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="#tab-es6">What is Homicide</a>
+      <a class="et-hero-tab" href="#tab-flexbox">Preventing Homicide</a>
+      <a class="et-hero-tab" href="#tab-react">Self-Defense</a>
+      <a class="et-hero-tab" href="#tab-angular">Statistics</a>
+      <a class="et-hero-tab" href="#tab-other">FAQ</a>
+      <span class="et-hero-tab-slider"></span>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <!-- Main -->
+  <main class="et-main">
+   
+      <section class="et-slide" id="tab-es6">
+        <h1>What Is Homicide?</h1>
+        <br>
+        <br>
+        <div class="grid-container">
+          <div class="grid-item">
+              <h4>1. Defenition</h4>
+              <dl>
+                  <dd> Homicide is the act of one person intentionally causing the death of another. It can occur in a variety of ways, including murder, manslaughter, and justifiable homicide (such as self-defense).
+                      The key factor that defines homicide is that it involves the killing of one individual by another, whether intentionally or through recklessness or negligence.
+                  </dd>
+     
+          </div>
+     
+          <div class="grid-item">
+              <h4>2. Categories of Homicide</h4>
+              <dl>
+                  <h5>There are two main categories of homicide:</h5>
+                  <ol>
+                  <li> Murder: The unlawful and intentional killing of another person, usually with malice or premeditation.</li>
+                  <li> Involuntary manslaughter: The unlawful killing of another person without malice or premeditation, often due to recklessness, but not as planned or intentional as murder.
+                  </li>
+                  </ol>
+              </dl>
+          </div>
+     
+          <div class="grid-item">
+              <h4>3. Causes of Homicide</h4>
+              <dl>
+                  <dd>Homicidal thoughts and behaviors are oftentimes caused by health issues. These include mental illnesses, childhood traumas, substance use, impulsivity, etc.
+                  </dd>
+              </dl>
+          </div>
+ 
+          <div class="grid-item">
+              <h4>4. Effects of Homicide</h4>
+              <dl>
+                  <dd>Creates a sense of insecurity in society, hinders social and economical development. Traumatizes (PTSD) individuals, especially young children (can even hinder their development).
+                       Can cause mental health issues in victims family/friends.
+                       Continuous homicide can cause it to be normalized in affected communities. Overall negatively affects the society, economy, and health/well being of a society. </dd>
+              </dl>
+          </div>
+         
+ 
+ 
+ 
+ 
+ 
+      </section>
+
+
+    <section class="et-slide" id="tab-flexbox">
+      <h1>How to prevent Homicide</h1>
+      <br>
+       
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>1. Aggressive or Threatening Behavior:</h2>
+                <dl>
+                    <h3>Verbal threats:</h3>
+                    <dd> Direct or indirect threats of harm to others, or violent language, should be taken seriously.</dd>
+       
+                    <h3>History of violence:</h3>
+                    <dd> A history of physical altercations, abuse, or criminal behavior indicates a higher risk of future violence.</dd>
+       
+                    <h3>Aggressive behavior:</h3>
+                    <dd> Sudden, disproportionate outbursts or extreme anger are warning signs of potential escalation.</dd>
+                </dl>
+            </div>
+       
+            <div class="grid-item">
+                <h2>2. Isolation and Withdrawal:</h2>
+                <dl>
+                    <h3>Social withdrawal:</h3>
+                    <dd> Cutting off from others, especially family or friends, may signal emotional struggles and a risk of violence.</dd>
+       
+                    <h3>Extreme jealousy or possessiveness:</h3>
+                    <dd> Controlling or possessive behaviors can escalate to violence in relationships.</dd>
+                </dl>
+            </div>
+       
+            <div class="grid-item">
+                <h2>3. Dangerous Fixations:</h2>
+                <dl>
+                    <h3>Fixation on a person or event:</h3>
+                    <dd> Obsessive thoughts or behaviors about a person, especially in romantic or interpersonal contexts, are red flags for potential harm.</dd>
+       
+                    <h3>Stalking behavior:</h3>
+                    <dd> Repeated unwanted contact or following someone is a dangerous warning sign.</dd>
+                </dl>
+            </div>
+       
+            <div class="grid-item">
+                <h2>4. Access to Weapons:</h2>
+                <dl>
+                    <h3>Carrying or talking about weapons:</h3>
+                    <dd> A person with access to or frequently discussing weapons, particularly when angry or upset, is at higher risk of violence.</dd>
+                </dl>
+            </div>
+       
+            <div class="grid-item span-two">
+                <h2>5. Mental Health Struggles and Stress:</h2>
+                <dl>
+                    <h3>Untreated mental health issues:</h3>
+                    <dd> Unresolved mental health problems like paranoia or delusions can lead to dangerous actions if not addressed.</dd>
+       
+                    <h3>Recent trauma or stress:</h3>
+                    <dd> Significant life changes like loss, financial troubles, or trauma can increase the risk of violent behavior.</dd>
+                </dl>
+            </div>
+           
+        </div>
+        <br>
+     
+        <br>
+        <br>
+    </section>
+ 
+    <section class="et-slide" id="tab-react">
+      <h1>Self-Defense</h1>
+    <br>
+    <br>
+      <div class="grid-container">
+        <div class="grid-item">
+            <h2>Self-Defense is a Basic Concept</h2>
+            <p>Self-defense is a basic concept that protects oneself or others from harm, danger, or threats. It is a reasonable response to an immediate threat, where the defender believes that using force is necessary to prevent injury or death. Self-defense is important because knowing how to defend yourself may be the difference between life and death.</p>
+        </div>
+   
+        <div class="grid-item">
+            <h2>Why is Self-Defense Necessary?</h2>
+            <p>Homicide is the leading cause of death among young people.</p>
+            <p>Young people face risks such as peer violence, dating violence, and bullying.</p>
+            <p>Knowing how to protect yourself builds confidence and helps you recognize and avoid dangerous situations.</p>
+        </div>
+   
+        <div class="grid-item">
+            <h2>Self-Defense Tips for Teens</h2>
+            <dl>
+                <h3>1. Be Alert:</h3>
+                <dd>Pay attention to your surroundings. Avoid distractions such as phones or headphones.</dd>
+   
+                <h3>2. Trust Your Intuition:</h3>
+                <dd>If you feel something is wrong, leave immediately.</dd>
+   
+                <h3>3. De-Escalate:</h3>
+                <dd>Remain calm, use non-aggressive language, and give space if tension arises.</dd>
+   
+                <h3>4. Preparation:</h3>
+                <dd>Take a self-defense class and learn basic techniques.</dd>
+   
+                <h3>5. Avoid Danger:</h3>
+                <dd>Stay in a well-lit area, use the buddy system, and share your plans with someone you trust.</dd>
+            </dl>
+        </div>
+   
+        <div class="grid-item ">
+            <h2>Safety Resources</h2>
+            <dl>
+                <h3>Report Concerns:</h3>
+                <dd>Report concerns to a trusted adult.</dd>
+   
+                <h3>Carry Safety Tools:</h3>
+                <dd>Carry safety tools like a whistle or pepper spray (if legal in your area).</dd>
+   
+                <h3>Save Emergency Contacts:</h3>
+                <dd>Save emergency contacts in your phone.</dd>
+   
+                <h3>Your Safety is a Priority:</h3>
+                <dd>Stay aware, prepared, and confident!</dd>
+            </dl>
+        </div>
+    </div>
+    </section>
+
+      <section class="et-slide" id="tab-angular">
+        <h1>Statistics</h1>
+        <br>
+          <br>
+ 
+          <div class="grid-container">
+              <div class="grid-item">
+                  <h4>1. Homicide Rates (1960 - 2022)</h4>
+                  <dl>
+                     <img src = "homicide.png" width = "500px"; height= "300px">
+              </div>
+         
+              <div class="grid-item">
+                  <h4>2. Homicide Victimization by Age Group</h4>
+                  <dl>
+                      <img src = "agehomicide.png" width = "500px"; height= "300px">
+                  </dl>
+              </div>
+         
+              <div class="grid-item">
+                  <h4>3. Homicide Victimization by Race</h4>
+                  <dl>
+                      <img src = "racehomicide.png" width = "500px"; height= "300px">
+                  </dl>
+              </div>
+     
+              <div class="grid-item">
+                  <h4>4. Homicide Victimization by Race and Sex</h4>
+                  <dl>
+                      <img src = "raceandsexhomicide.png" width = "500px"; height= "300px">
+                  </dl>
+              </div>
+
+     
+      </section>
+    <section class="et-slide" id="tab-other">
+        <h1>FAQ</h1>
+        <h3>Frequently Asked Questions</h3>
+    
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">1. What should I do if I witness a homicide?</button>
+                <div class="faq-answer">
+                    <p>If you witness a homicide or a violent crime, your immediate priority should be your safety. If possible, remove yourself from the area and contact emergency services immediately. Avoid touching anything at the scene as it could be critical evidence.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">2. How can I tell if someone is a potential threat of committing homicide?</button>
+                <div class="faq-answer">
+                    <p>It's important to watch for warning signs such as threats, history of violent behavior, obsession with a person or event, and access to weapons. If you suspect someone may be dangerous, take precautions, report your concerns to authorities, and avoid contact if possible.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">3. Can someone be charged with homicide if it was done in self-defense?</button>
+                <div class="faq-answer">
+                    <p>Self-defense is a legal justification for using force, including deadly force, to protect oneself from immediate harm. If a homicide is deemed to be in self-defense, it may not result in criminal charges. However, the specific circumstances are always evaluated by the authorities and the justice system.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">4. What are the long-term effects on communities affected by homicide?</button>
+                <div class="faq-answer">
+                    <p>Communities affected by frequent homicides may experience a breakdown in social cohesion, increased fear, and distrust. This can lead to a decrease in economic activity, mental health issues, and even normalization of violence. These effects can persist for generations.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">5. How does the law distinguish between murder and manslaughter?</button>
+                <div class="faq-answer">
+                    <p>Murder is typically defined as the unlawful killing of a person with intent or malice. Manslaughter, on the other hand, occurs when a person kills another without premeditation or intent, often in a heat of passion or due to recklessness, without the intent to cause death.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">6. How can I support someone who has been affected by homicide?</button>
+                <div class="faq-answer">
+                    <p>Supporting someone who has been affected by homicide involves providing emotional support, being a good listener, and helping them find professional counseling if needed. Encourage them to seek help from support groups and legal assistance if necessary to cope with the trauma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Toggle the dropdown on clicking the question
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function () {
+                const answer = this.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+  </main>
+    </body>
+</html>
+
+
+
